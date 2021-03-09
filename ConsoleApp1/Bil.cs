@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Bil
+    class Bil : Motorkøretøj
     {
-
-        private string mærke { get; set; }
-        public int alder { get; set; }
-
-        public string returnmærke()
+        public Bil() : base("Yamaha", DateTime.Today)
         {
-            return mærke;
+
         }
     }
 }
